@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to your dashboard, {{ session['username'] }}!</h2>
+    <p>This is a protected page that only logged-in users can access.</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
